@@ -12,5 +12,6 @@ public class DocumentEditorClient {
         documentEditor.render();
 
         documentEditor.saveDocument();
+        System.out.println("logging");
     }
 }
