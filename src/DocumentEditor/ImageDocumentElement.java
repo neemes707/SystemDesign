@@ -1,3 +1,5 @@
+package DocumentEditor;
+
 public class ImageDocumentElement implements DocumentElement {
     ImageDocumentElement(){
         this.path = "";

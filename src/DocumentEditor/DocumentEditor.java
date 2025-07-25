@@ -1,3 +1,5 @@
+package DocumentEditor;
+
 public class DocumentEditor {
     Persistence persistence;
     Document document;

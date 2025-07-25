@@ -1,3 +1,5 @@
+package DocumentEditor;
+
 public class FilePersistence implements Persistence{
     @Override
     public void save() {

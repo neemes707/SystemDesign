@@ -1,3 +1,5 @@
+package DocumentEditor;
+
 public class TextDocumentEditor implements DocumentElement{
     String text;
     TextDocumentEditor(){

@@ -1,3 +1,5 @@
+package DocumentEditor;
+
 public class DbPersistence implements Persistence{
     @Override
     public void save() {
