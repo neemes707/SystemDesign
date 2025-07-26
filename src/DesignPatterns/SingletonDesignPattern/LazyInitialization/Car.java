@@ -6,7 +6,7 @@ public class Car {
 
     }
 
-    //thread safe double check locking and lazy initialization
+    //double check locking and lazy initialization
     public static Car getInstance(){
         if(instance == null) {
             synchronized (Car.class){
