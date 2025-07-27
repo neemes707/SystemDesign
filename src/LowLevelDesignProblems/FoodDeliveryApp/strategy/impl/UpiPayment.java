@@ -4,7 +4,7 @@ import LowLevelDesignProblems.FoodDeliveryApp.strategy.PaymentStrategy;
 
 public class UpiPayment implements PaymentStrategy {
     private String upiId;
-    UpiPayment(String upiId){
+    public UpiPayment(String upiId){
         this.upiId = upiId;
     }
 

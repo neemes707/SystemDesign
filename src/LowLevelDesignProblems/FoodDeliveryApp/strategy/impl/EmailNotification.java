@@ -1,11 +1,22 @@
 package LowLevelDesignProblems.FoodDeliveryApp.strategy.impl;
 
+import LowLevelDesignProblems.FoodDeliveryApp.service.Order;
 import LowLevelDesignProblems.FoodDeliveryApp.strategy.NotificationStrategy;
 
 public class EmailNotification implements NotificationStrategy {
     private String email;
-    EmailNotification(String email){
+    private Order order;
+    public EmailNotification(String email,Order order){
         this.email = email;
+        this.order = order;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public String getEmail() {

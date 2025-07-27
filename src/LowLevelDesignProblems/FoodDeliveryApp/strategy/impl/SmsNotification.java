@@ -1,12 +1,23 @@
 package LowLevelDesignProblems.FoodDeliveryApp.strategy.impl;
 
+import LowLevelDesignProblems.FoodDeliveryApp.service.Order;
 import LowLevelDesignProblems.FoodDeliveryApp.strategy.NotificationStrategy;
 
 public class SmsNotification implements NotificationStrategy {
     private String mobileNumber;
-
-    SmsNotification(String mobileNumber){
+    private Order order;
+    public SmsNotification(String mobileNumber,Order order){
         this.mobileNumber = mobileNumber;
+        this.order = order;
+
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public String getMobileNumber() {

@@ -4,7 +4,7 @@ import LowLevelDesignProblems.FoodDeliveryApp.strategy.PaymentStrategy;
 
 public class NetBanking implements PaymentStrategy {
     private String cardNumber;
-    NetBanking(String cardNumber){
+    public NetBanking(String cardNumber){
         this.cardNumber = cardNumber;
     }
 
