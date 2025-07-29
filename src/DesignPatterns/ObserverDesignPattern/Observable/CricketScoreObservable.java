@@ -4,6 +4,7 @@ import DesignPatterns.ObserverDesignPattern.Observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class CricketScoreObservable implements Observable<String>{
     private String score;
@@ -37,7 +38,9 @@ public class CricketScoreObservable implements Observable<String>{
     @Override
     public void notifyAllObservers() {
         for(Observer observer : observerList){
-            observer.update();
+            /**using multi threading to avoid bottleneck of performance at sending notifications
+             * can we heavy process , we can also use some Messaging Queues like Kafka or Rabbit MQ*/
+           CompletableFuture.runAsync(observer::update);
         }
     }
 }
