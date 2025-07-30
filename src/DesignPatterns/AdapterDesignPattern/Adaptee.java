@@ -1,7 +1,7 @@
 package DesignPatterns.AdapterDesignPattern;
 
 public class Adaptee {
-    int getWeightInPounds(){
+    public double getWeightInPounds(int weight) {
         return 100;
     }
 }

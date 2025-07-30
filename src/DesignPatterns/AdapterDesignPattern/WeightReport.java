@@ -1,5 +1,5 @@
 package DesignPatterns.AdapterDesignPattern;
 
 public interface WeightReport {
-    double getWeightInKg();
+    double getWeightInKg(int weight);
 }
