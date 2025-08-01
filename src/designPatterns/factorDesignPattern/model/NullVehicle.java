@@ -1,0 +1,7 @@
+package designPatterns.factorDesignPattern.model;
+//null design pattern
+public class NullVehicle extends Vehicle{
+    public NullVehicle(){
+        super(0,"");
+    }
+}
