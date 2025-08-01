@@ -1,6 +1,5 @@
 package LowLevelDesignProblems.NotificationService.Observable;
 
-import DesignPatterns.ObserverDesignPattern.Observer.Observer;
 import LowLevelDesignProblems.NotificationService.Model.Notification;
 import LowLevelDesignProblems.NotificationService.Observers.NotificationObserver;
 
