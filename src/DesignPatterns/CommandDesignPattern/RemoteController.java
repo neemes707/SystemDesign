@@ -22,7 +22,7 @@ public class RemoteController {
         }
     }
 
-    public void executeCommand(int index){
+    public void pressButton(int index){
         if(index >= 0 && index < commands.length){
             if(commands[index] != null){
                 if(isButtonPressed[index]){

@@ -9,10 +9,10 @@ public class CommandPatternTesting {
         remoteController.setCommand(new LightCommand(light),0);
         remoteController.setCommand(new FanCommand(fan1),1);
 
-        remoteController.executeCommand(1);
-        remoteController.executeCommand(0);
+        remoteController.pressButton(1);
+        remoteController.pressButton(0);
 
-        remoteController.executeCommand(1);
-        remoteController.executeCommand(0);
+        remoteController.pressButton(1);
+        remoteController.pressButton(0);
     }
 }
