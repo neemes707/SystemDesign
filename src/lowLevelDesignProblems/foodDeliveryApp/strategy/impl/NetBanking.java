@@ -1,0 +1,23 @@
+package lowLevelDesignProblems.foodDeliveryApp.strategy.impl;
+
+import lowLevelDesignProblems.foodDeliveryApp.strategy.PaymentStrategy;
+
+public class NetBanking implements PaymentStrategy {
+    private String cardNumber;
+    public NetBanking(String cardNumber){
+        this.cardNumber = cardNumber;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public void pay(double amount){
+        System.out.println("Payment of " + amount + " made through Net Banking from card " + cardNumber);
+    }
+}
