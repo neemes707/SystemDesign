@@ -1,4 +1,4 @@
-package lowLevelDesignProblems.enums;
+package lowLevelDesignProblems.discountCoupons.enums;
 
 public enum DiscountStrategyType {
     FLAT,

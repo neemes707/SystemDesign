@@ -3,7 +3,7 @@ package lowLevelDesignProblems.discountCoupons.factory;
 import lowLevelDesignProblems.discountCoupons.discountStrategy.DiscountStrategy;
 import lowLevelDesignProblems.discountCoupons.discountStrategy.FlatDiscountStrategy;
 import lowLevelDesignProblems.discountCoupons.discountStrategy.PercentDiscountStrategy;
-import lowLevelDesignProblems.enums.DiscountStrategyType;
+import lowLevelDesignProblems.discountCoupons.enums.DiscountStrategyType;
 
 public class DiscountStrategyFactory{
     public static DiscountStrategy getDiscountStrategy(DiscountStrategyType type){

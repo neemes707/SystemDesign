@@ -6,7 +6,7 @@ import lowLevelDesignProblems.discountCoupons.coupon.SeasonalCoupon;
 import lowLevelDesignProblems.discountCoupons.coupon.SpecialDaySaleCoupon;
 import lowLevelDesignProblems.discountCoupons.factory.DiscountStrategyFactory;
 import lowLevelDesignProblems.discountCoupons.model.Product;
-import lowLevelDesignProblems.enums.DiscountStrategyType;
+import lowLevelDesignProblems.discountCoupons.enums.DiscountStrategyType;
 
 public class DiscountCouponTesting {
     public static void main(String[] args) {
