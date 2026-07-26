@@ -9,5 +9,6 @@ public class TemplateDesignTesting {
 
         ModelTrainer agentModelTrainer = new AgentModelTrainer();
         agentModelTrainer.trainPipeline("c/desktop/agentic.txt");
+
     }
 }

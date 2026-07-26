@@ -11,7 +11,6 @@ import lowLevelDesignProblems.discountCoupons.enums.DiscountStrategyType;
 public class DiscountCouponTesting {
     public static void main(String[] args) {
 
-
         Coupon bankCoupon = new BankCoupon(null,
                 DiscountStrategyFactory.getDiscountStrategy(DiscountStrategyType.FLAT));
         Coupon  seasonCoupon = new SeasonalCoupon(bankCoupon,
